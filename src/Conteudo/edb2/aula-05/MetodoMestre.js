@@ -39,7 +39,7 @@ export function MetodoMestreCasos(props) {
         justifyContent="space-evenly">
       <Typography className={classes.topico}><strong>Caso 1: </strong>Se <span className={classes.emphasis}><Math tex={String.raw`f(n) = O(n^{\log_b{a-\varepsilon}})`}/></span> para <Math tex={String.raw`\varepsilon > 0`}/>, então <span className={classes.emphasis}><Math tex={String.raw`T(n) = \Theta(n^{\log_b{a}})`}/></span>.</Typography>
       <Typography className={classes.topico}><strong>Caso 2: </strong>Se <span className={classes.emphasis}><Math tex={String.raw`f(n) = \Theta(n^{\log_b{a}})`}/></span> então <span className={classes.emphasis}><Math tex={String.raw`T(n) = \Theta(n^{\log_b{a}} \cdot \log{n})`}/></span>.</Typography>
-      <Typography className={classes.topico}><strong>Caso 3: </strong>Se <span className={classes.emphasis}><Math tex={String.raw`f(n) = \Omega(n^{\log_b{a+\varepsilon}})`}/></span> para <Math tex={String.raw`\varepsilon > 0`}/> e se <Math tex={String.raw`a \cdot f(n/b) \leqslant c \cdot f(n)`}/> para <Math tex={String.raw`c < 1`}/> para n suficientemente grande, então <span className={classes.emphasis}><Math tex={String.raw`T(n) = \Theta(n^{\log_b{a}})`}/></span>.</Typography>
+      <Typography className={classes.topico}><strong>Caso 3: </strong>Se <span className={classes.emphasis}><Math tex={String.raw`f(n) = \Omega(n^{\log_b{a+\varepsilon}})`}/></span> para <Math tex={String.raw`\varepsilon > 0`}/> e se <Math tex={String.raw`a \cdot f(n/b) \leqslant c \cdot f(n)`}/> para <Math tex={String.raw`c < 1`}/> para n suficientemente grande, então <span className={classes.emphasis}><Math tex={String.raw`T(n) = \Theta(f(n))`}/></span>.</Typography>
     </Box>
   );
 }

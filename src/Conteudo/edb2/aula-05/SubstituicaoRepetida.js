@@ -1,6 +1,6 @@
 import { Grid, makeStyles, Typography } from "@material-ui/core";
-import Math from "../../ImdCommons/Math";
-import { baseStyles } from "../../styles";
+import Math from "../../../ImdCommons/Math";
+import { baseStyles } from "../../../styles";
 
 const useStyles = makeStyles((theme, props) => ({
   ...baseStyles,

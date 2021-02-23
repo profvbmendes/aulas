@@ -1,9 +1,9 @@
 import { Box, makeStyles, Typography } from "@material-ui/core";
-import { themeBaseStyles } from "../../styles";
-import analiseEmArvore1Img from "../../img/analiseEmArvore1.png";
-import analiseEmArvore2Img from "../../img/analiseEmArvore2.png";
-import analiseEmArvore3Img from "../../img/analiseEmArvore3.png";
-import Math from "../../ImdCommons/Math";
+import { themeBaseStyles } from "../../../styles";
+import analiseEmArvore1Img from "../../../img/analiseEmArvore1.png";
+import analiseEmArvore2Img from "../../../img/analiseEmArvore2.png";
+import analiseEmArvore3Img from "../../../img/analiseEmArvore3.png";
+import Math from "../../../ImdCommons/Math";
 import { useSteps } from "spectacle/es/hooks/use-steps";
 import { SlideContext } from "spectacle/es/components/slide/slide";
 import { useContext, useEffect } from "react";

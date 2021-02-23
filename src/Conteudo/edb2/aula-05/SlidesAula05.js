@@ -1,22 +1,22 @@
-import './App.css';
-import SlideInicial from './ImdCommons/SlideInicial';
+import '../../../App.css';
+import SlideInicial from '../../../ImdCommons/SlideInicial';
 import { Box, List, makeStyles } from '@material-ui/core';
-import { baseStyles } from './styles';
-import SlideAgenda, { Topico } from './ImdCommons/SlideAgenda';
-import ImdSlide from './ImdCommons/ImdSlide';
-import MergeSortExample from './Conteudo/aula-05/MergeSort';
-import MergeSortCode from './Conteudo/aula-05/MergeSortCode';
-import RelacoesDeRecorrencia from './Conteudo/aula-05/RelacoesDeRecorrencia';
-import MetodoIteracao from './Conteudo/aula-05/SubstituicaoRepetida';
-import AnaliseEmArvore, { AnaliseEmArvoreExercicio, AnaliseEmArvoreFormulas, AnaliseEmArvoreFormulas2 } from './Conteudo/aula-05/AnaliseEmArvore';
-import MergeSortAnaliseEmArvore, { MergeSortAnaliseEmArvore2 } from './Conteudo/aula-05/MergeSortAnaliseArvore';
-import MetodoMestre, { MetodoMestreArvore, MetodoMestreCasos, MetodoMestreMergeSort } from './Conteudo/aula-05/MetodoMestre';
-import MetodoSubstituicao from './Conteudo/aula-05/MetodoSubstituicao';
-import Math from './ImdCommons/Math';
+import { baseStyles } from '../../../styles';
+import SlideAgenda, { Topico } from '../../../ImdCommons/SlideAgenda';
+import ImdSlide from '../../../ImdCommons/ImdSlide';
+import MergeSortExample from './MergeSort';
+import MergeSortCode from './MergeSortCode';
+import RelacoesDeRecorrencia from './RelacoesDeRecorrencia';
+import MetodoIteracao from './SubstituicaoRepetida';
+import AnaliseEmArvore, { AnaliseEmArvoreExercicio, AnaliseEmArvoreFormulas, AnaliseEmArvoreFormulas2 } from './AnaliseEmArvore';
+import MergeSortAnaliseEmArvore, { MergeSortAnaliseEmArvore2 } from './MergeSortAnaliseArvore';
+import MetodoMestre, { MetodoMestreArvore, MetodoMestreCasos, MetodoMestreMergeSort } from './MetodoMestre';
+import MetodoSubstituicao from './MetodoSubstituicao';
+import Math from '../../../ImdCommons/Math';
 
 const useStyles = makeStyles((theme, props) => (baseStyles));
 
-function Slides(props) {
+function SlidesAula05EDB2(props) {
   const classes = useStyles(props);
 
   return (
@@ -95,4 +95,4 @@ function Slides(props) {
   );
 }
 
-export default Slides;
+export default SlidesAula05EDB2;

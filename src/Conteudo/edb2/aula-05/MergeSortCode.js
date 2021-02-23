@@ -1,10 +1,10 @@
 import { Box, makeStyles } from "@material-ui/core";
 import { useSteps } from "spectacle/es/hooks/use-steps";
-import { mergeCode, mergeSortCode } from "../../codes/merge_sort";
-import { mergeSortRecorrencia } from "../../formulas";
-import ImdCodePane from "../../ImdCommons/ImdCodePane";
-import Math from "../../ImdCommons/Math";
-import { baseStyles } from "../../styles";
+import { mergeCode, mergeSortCode } from "../../../codes/merge_sort";
+import { mergeSortRecorrencia } from "../../../formulas";
+import ImdCodePane from "../../../ImdCommons/ImdCodePane";
+import Math from "../../../ImdCommons/Math";
+import { baseStyles } from "../../../styles";
 
 const useStyles = makeStyles((theme, props) => ({
   ...baseStyles,

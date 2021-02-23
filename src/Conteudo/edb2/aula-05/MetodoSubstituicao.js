@@ -1,6 +1,6 @@
 import { Box, makeStyles, Typography } from "@material-ui/core";
-import Math from "../../ImdCommons/Math";
-import { themeBaseStyles } from "../../styles";
+import Math from "../../../ImdCommons/Math";
+import { themeBaseStyles } from "../../../styles";
 
 const useStyles = makeStyles((theme, props) => ({
   ...themeBaseStyles(theme, props),

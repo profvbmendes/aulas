@@ -1,9 +1,9 @@
 import { Box, makeStyles } from "@material-ui/core";
-import { themeBaseStyles } from "../../styles";
-import analiseEmArvore1Img from "../../img/analiseEmArvore1.png";
-import analiseEmArvore2Img from "../../img/analiseEmArvore2.png";
-import Math from "../../ImdCommons/Math";
-import { mergeSortRecorrencia } from "../../formulas";
+import { themeBaseStyles } from "../../../styles";
+import analiseEmArvore1Img from "../../../img/analiseEmArvore1.png";
+import analiseEmArvore2Img from "../../../img/analiseEmArvore2.png";
+import Math from "../../../ImdCommons/Math";
+import { mergeSortRecorrencia } from "../../../formulas";
 
 const useStyles = makeStyles((theme, props) => ({
   ...themeBaseStyles(theme, props),

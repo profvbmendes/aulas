@@ -3,13 +3,13 @@ import { useContext, useEffect } from "react";
 import { Box, Heading, ListItem } from "spectacle";
 import { SlideContext } from "spectacle/es/components/slide/slide";
 import { useSteps } from 'spectacle/es/hooks/use-steps';
-import { buscaSequencialCode } from "../../codes/busca_sequencial";
-import ImdCodePane from "../../ImdCommons/ImdCodePane";
-import ImdComplexityTable from "../../ImdCommons/ImdComplexityTable";
-import ImdInstructionTable from "../../ImdCommons/ImdInstructionTable";
-import { ImdVetorHorizontal } from "../../ImdCommons/ImdVetor";
-import Math from "../../ImdCommons/Math";
-import { baseStyles } from "../../styles";
+import { buscaSequencialCode } from "../../../codes/busca_sequencial";
+import ImdCodePane from "../../../ImdCommons/ImdCodePane";
+import ImdComplexityTable from "../../../ImdCommons/ImdComplexityTable";
+import ImdInstructionTable from "../../../ImdCommons/ImdInstructionTable";
+import { ImdVetorHorizontal } from "../../../ImdCommons/ImdVetor";
+import Math from "../../../ImdCommons/Math";
+import { baseStyles } from "../../../styles";
 
 const useStyles = makeStyles((theme, props) => ({
   ...baseStyles,

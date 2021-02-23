@@ -1,9 +1,9 @@
 import './App.css';
 import { Box, Deck, FlexBox, FullScreen, Progress } from 'spectacle';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core';
-import Slides from './Slides';
+import SlidesAula05EDB2 from './Conteudo/edb2/aula-05/SlidesAula05';
 import MathJax from '@innodoc/react-mathjax-node';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router, Redirect, Route } from 'react-router-dom';
 
 const spectacleTheme = {
   colors: {
@@ -65,7 +65,13 @@ function App() {
             }
           }}>
             <Deck theme={spectacleTheme} template={template}>
-              <Slides/>
+              <Router>
+                <Route path="/edb2/aula-05"><SlidesAula05EDB2/></Route>
+                
+                <Route path="/">
+                  <Redirect to="/edb2/aula-05"/>
+                </Route>
+              </Router>
             </Deck>
           </MathJax.ConfigProvider>
         </ThemeProvider>

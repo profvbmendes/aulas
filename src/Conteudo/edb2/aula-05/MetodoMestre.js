@@ -1,8 +1,8 @@
 import { Box, makeStyles, Typography } from "@material-ui/core";
-import Math from "../../ImdCommons/Math";
-import { themeBaseStyles } from "../../styles";
-import provaMetodoMestre from "../../img/provaMetodoMestre.png";
-import {mergeSortRecorrencia} from "../../formulas"; 
+import Math from "../../../ImdCommons/Math";
+import { themeBaseStyles } from "../../../styles";
+import provaMetodoMestre from "../../../img/provaMetodoMestre.png";
+import {mergeSortRecorrencia} from "../../../formulas"; 
 import { useSteps } from "spectacle/es/hooks/use-steps";
 
 const useStyles = makeStyles((theme, props) => ({

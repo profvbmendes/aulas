@@ -1,8 +1,8 @@
 import { Box, makeStyles } from "@material-ui/core";
 import Tree from 'react-d3-tree';
 import { useSteps } from "spectacle/es/hooks/use-steps";
-import { arvoreMergeSort } from "../../data/arvoreMergeSort";
-import { baseStyles } from "../../styles";
+import { arvoreMergeSort } from "../../../data/arvoreMergeSort";
+import { baseStyles } from "../../../styles";
 
 const useStyles = makeStyles((theme, props) => ({
   ...baseStyles,

@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme, props) => ({
 }));
 
 export function Topico(props) {
-  return (<ListItem component="li">{props.children}</ListItem>);
+  return (<ListItem component="li" className={props.className}>{props.children}</ListItem>);
 }
 
 export default function SlideAgenda(props) {

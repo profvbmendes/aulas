@@ -5,8 +5,6 @@ import analiseEmArvore2Img from "../../../img/analiseEmArvore2.png";
 import analiseEmArvore3Img from "../../../img/analiseEmArvore3.png";
 import Math from "../../../ImdCommons/Math";
 import { useSteps } from "spectacle/es/hooks/use-steps";
-import { SlideContext } from "spectacle/es/components/slide/slide";
-import { useContext, useEffect } from "react";
 
 const useStyles = makeStyles((theme, props) => ({
   ...themeBaseStyles(theme, props),
@@ -25,7 +23,7 @@ export default function AnaliseEmArvore(props) {
         flexDirection="column"
         alignItems="center"
         justifyContent="space-evenly">
-        <Typography className={classes.topico}>Representa em uma <span className={classes.emphasis}>árvores</span> o desenvolvimento da <span className={classes.emphasis}>recorrência</span>.</Typography>
+        <Typography className={classes.topico}>Representa em uma <span className={classes.emphasis}>árvore</span> o desenvolvimento da <span className={classes.emphasis}>recorrência</span>.</Typography>
         <Typography className={classes.topico}>Cada <span className={classes.emphasis}>nó</span> representa um <span className={classes.emphasis}>subproblema</span>.</Typography>
         <Typography className={classes.topico}>O <span className={classes.emphasis}>custo total</span> é a soma dos custos de cada nó.</Typography>
       </Box>

@@ -13,11 +13,16 @@ import MergeSortAnaliseEmArvore, { MergeSortAnaliseEmArvore2 } from './MergeSort
 import MetodoMestre, { MetodoMestreArvore, MetodoMestreCasos, MetodoMestreMergeSort } from './MetodoMestre';
 import MetodoSubstituicao from './MetodoSubstituicao';
 import Math from '../../../ImdCommons/Math';
+import { useEffect } from 'react';
 
 const useStyles = makeStyles((theme, props) => (baseStyles));
 
 function SlidesAula05EDB2(props) {
   const classes = useStyles(props);
+
+  useEffect(() => {
+    document.title = "EDB2 - Aula 05 - Resolvendo Relações de Recorrência"
+  }, []);
 
   return (
     <>

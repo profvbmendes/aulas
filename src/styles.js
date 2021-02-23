@@ -41,6 +41,9 @@ export const baseStyles = {
   },
   root: {
     flexGrow: 1
+  },
+  topicoS1: {
+    fontSize: '1.3em'
   }
 };
 

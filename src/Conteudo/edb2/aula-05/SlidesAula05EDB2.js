@@ -80,9 +80,9 @@ function SlidesAula05EDB2(props) {
         <List component="ul" className={classes.bullets}>
           <Topico>Aplique o método mestre para cada uma das seguintes recorrências: 
             <List component="ol" className={classes.lowerRomanOl}>
-              <Topico><Math tex={String.raw`T(n) = 9T(n/3) + 1`}/></Topico>
               <Topico><Math tex={String.raw`T(n) = 4T(n/2) + n`}/></Topico>
               <Topico><Math tex={String.raw`T(n) = 16T(n/4) + n^2`}/></Topico>
+              <Topico><Math tex={String.raw`T(n) = 16T(n/4) + n^3`}/></Topico>
             </List>
           </Topico>
         </List>

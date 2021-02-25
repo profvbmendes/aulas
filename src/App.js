@@ -4,6 +4,7 @@ import { createMuiTheme, ThemeProvider } from '@material-ui/core';
 import MathJax from '@innodoc/react-mathjax-node';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import SlidesAula05EDB2 from './Conteudo/edb2/aula-05/SlidesAula05EDB2';
+import SlidesAula06EDB2 from './Conteudo/edb2/aula-06/SlidesAula06EDB2';
 import SlidesAula05LP2 from './Conteudo/lp2/aula-05/SlidesAula05LP2';
 
 const spectacleTheme = {
@@ -68,6 +69,7 @@ function App() {
             <Deck theme={spectacleTheme} template={template}>
               <Router>
                 <Route path="/edb2/aula-05"><SlidesAula05EDB2/></Route>
+                <Route path="/edb2/aula-06"><SlidesAula06EDB2/></Route>
                 <Route path="/lp2/aula-05"><SlidesAula05LP2/></Route>
               </Router>
             </Deck>

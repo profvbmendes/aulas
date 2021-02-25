@@ -44,6 +44,12 @@ export const baseStyles = {
   },
   topicoS1: {
     fontSize: '1.3em'
+  },
+  topicoS2: {
+    fontSize: '2em'
+  },
+  topicoS3: {
+    fontSize: '3em'
   }
 };
 

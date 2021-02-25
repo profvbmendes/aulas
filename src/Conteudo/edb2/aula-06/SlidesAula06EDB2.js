@@ -8,6 +8,8 @@ import { useEffect } from 'react';
 import AlgoritmosSlide from './Algoritmos';
 import ProblemaOrdenacao from './ProblemaOrdenacao';
 import {ProblemaOrdenacao2} from './ProblemaOrdenacao';
+import SlideAgenda, { Topico } from '../../../ImdCommons/SlideAgenda';
+import LimiteInferior, { ArvoreDecisao, ComplexidadeArvoreDecisao, AlgoritmoOtimo } from './LimiteInferior';
 
 const useStyles = makeStyles((theme, props) => (baseStyles));
 
@@ -26,7 +28,12 @@ function SlidesAula05EDB2(props) {
         assunto="Complexidade de Algoritmos vs Complexidade de Problemas"
         semestre="2020.2"
         />
-      <ImdSlide heading="Complexidade de Algoritmo vs Complexidade de Problema"></ImdSlide>
+      <SlideAgenda>
+        <Topico>Limite superior de um problema</Topico>
+        <Topico>Limite inferior de um problema</Topico>
+        <Topico>Árvore de decisão</Topico>
+        <Topico>Algoritmo ótimo</Topico>
+      </SlideAgenda>
       <ImdSlide heading="Algoritmos">
         <AlgoritmosSlide/>
       </ImdSlide>
@@ -35,6 +42,18 @@ function SlidesAula05EDB2(props) {
       </ImdSlide>
       <ImdSlide heading="Problema da ordenação">
         <ProblemaOrdenacao2/>
+      </ImdSlide>
+      <ImdSlide heading="Limite Inferior">
+        <LimiteInferior/>
+      </ImdSlide>
+      <ImdSlide heading="Árvore de Decisão">
+        <ArvoreDecisao/>
+      </ImdSlide>
+      <ImdSlide heading="Árvore de Decisão">
+        <ComplexidadeArvoreDecisao/>
+      </ImdSlide>
+      <ImdSlide heading="Algoritmo ótimo">
+        <AlgoritmoOtimo/>
       </ImdSlide>
       <ImdSlideDuvidas/>
       );

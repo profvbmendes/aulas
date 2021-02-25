@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/aulas/static/css/main.952fc2e3.chunk.css",
-    "main.js": "/aulas/static/js/main.25a571d3.chunk.js",
-    "main.js.map": "/aulas/static/js/main.25a571d3.chunk.js.map",
+    "main.js": "/aulas/static/js/main.046ee512.chunk.js",
+    "main.js.map": "/aulas/static/js/main.046ee512.chunk.js.map",
     "runtime-main.js": "/aulas/static/js/runtime-main.80eb2dd4.js",
     "runtime-main.js.map": "/aulas/static/js/runtime-main.80eb2dd4.js.map",
-    "static/js/2.c33f65b3.chunk.js": "/aulas/static/js/2.c33f65b3.chunk.js",
-    "static/js/2.c33f65b3.chunk.js.map": "/aulas/static/js/2.c33f65b3.chunk.js.map",
+    "static/js/2.f519baac.chunk.js": "/aulas/static/js/2.f519baac.chunk.js",
+    "static/js/2.f519baac.chunk.js.map": "/aulas/static/js/2.f519baac.chunk.js.map",
     "static/js/3.48d59543.chunk.js": "/aulas/static/js/3.48d59543.chunk.js",
     "static/js/3.48d59543.chunk.js.map": "/aulas/static/js/3.48d59543.chunk.js.map",
     "index.html": "/aulas/index.html",
     "static/css/main.952fc2e3.chunk.css.map": "/aulas/static/css/main.952fc2e3.chunk.css.map",
-    "static/js/2.c33f65b3.chunk.js.LICENSE.txt": "/aulas/static/js/2.c33f65b3.chunk.js.LICENSE.txt",
+    "static/js/2.f519baac.chunk.js.LICENSE.txt": "/aulas/static/js/2.f519baac.chunk.js.LICENSE.txt",
     "static/media/analiseEmArvore1.05410751.png": "/aulas/static/media/analiseEmArvore1.05410751.png",
     "static/media/analiseEmArvore2.89f6a8f4.png": "/aulas/static/media/analiseEmArvore2.89f6a8f4.png",
     "static/media/analiseEmArvore3.4a140da8.png": "/aulas/static/media/analiseEmArvore3.4a140da8.png",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.80eb2dd4.js",
-    "static/js/2.c33f65b3.chunk.js",
+    "static/js/2.f519baac.chunk.js",
     "static/css/main.952fc2e3.chunk.css",
-    "static/js/main.25a571d3.chunk.js"
+    "static/js/main.046ee512.chunk.js"
   ]
 }

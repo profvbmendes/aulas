@@ -17,7 +17,7 @@ function SlidesAula05EDB2(props) {
   const classes = useStyles(props);
 
   useEffect(() => {
-    document.title = "EDB2 - Aula 05 - Resolvendo Relações de Recorrência"
+    document.title = "EDB2 - Aula 06 - Complexidade de Algoritmos vs Complexidade de Problemas"
   }, []);
 
   return (

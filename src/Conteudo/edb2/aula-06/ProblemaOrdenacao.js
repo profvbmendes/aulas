@@ -1,5 +1,4 @@
 import { Box, makeStyles, Typography } from "@material-ui/core";
-import { Link } from "react-router-dom";
 import { useSteps } from "spectacle/es/hooks/use-steps";
 import ImdComplexityTable from "../../../ImdCommons/ImdComplexityTable";
 import Math from "../../../ImdCommons/Math";

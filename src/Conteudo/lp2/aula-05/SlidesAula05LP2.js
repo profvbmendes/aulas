@@ -1,11 +1,10 @@
 import '../../../App.css';
 import SlideInicial from '../../../ImdCommons/SlideInicial';
-import { Box, List, makeStyles } from '@material-ui/core';
+import { List, makeStyles } from '@material-ui/core';
 import { themeBaseStyles } from '../../../styles';
 import SlideAgenda, { Topico } from '../../../ImdCommons/SlideAgenda';
 import ImdSlide from '../../../ImdCommons/ImdSlide';
 import { useEffect } from 'react';
-import DiagramaDeClasse from '../../../ImdCommons/DiagramaDeClasse';
 import { HerancaDiagramasDeClasse } from './Heranca';
 
 const useStyles = makeStyles((theme, props) => (themeBaseStyles(theme, props)));

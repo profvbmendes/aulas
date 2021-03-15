@@ -1,5 +1,5 @@
-import { Box, Grid, makeStyles, Typography } from "@material-ui/core";
-import { Slide, Heading } from "spectacle";
+import { Box, makeStyles, Typography } from "@material-ui/core";
+import { Slide } from "spectacle";
 import { baseStyles } from "../styles";
 
 const useStyles = makeStyles((theme, props) => ({

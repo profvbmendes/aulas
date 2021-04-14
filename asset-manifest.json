@@ -1,26 +1,38 @@
 {
   "files": {
     "main.css": "/aulas/static/css/main.952fc2e3.chunk.css",
-    "main.js": "/aulas/static/js/main.7d85e3d9.chunk.js",
-    "main.js.map": "/aulas/static/js/main.7d85e3d9.chunk.js.map",
-    "runtime-main.js": "/aulas/static/js/runtime-main.80eb2dd4.js",
-    "runtime-main.js.map": "/aulas/static/js/runtime-main.80eb2dd4.js.map",
-    "static/js/2.d44b4efa.chunk.js": "/aulas/static/js/2.d44b4efa.chunk.js",
-    "static/js/2.d44b4efa.chunk.js.map": "/aulas/static/js/2.d44b4efa.chunk.js.map",
-    "static/js/3.48d59543.chunk.js": "/aulas/static/js/3.48d59543.chunk.js",
-    "static/js/3.48d59543.chunk.js.map": "/aulas/static/js/3.48d59543.chunk.js.map",
+    "main.js": "/aulas/static/js/main.b507290f.chunk.js",
+    "main.js.map": "/aulas/static/js/main.b507290f.chunk.js.map",
+    "runtime-main.js": "/aulas/static/js/runtime-main.1f23d49f.js",
+    "runtime-main.js.map": "/aulas/static/js/runtime-main.1f23d49f.js.map",
+    "static/js/2.3d8fc164.chunk.js": "/aulas/static/js/2.3d8fc164.chunk.js",
+    "static/js/2.3d8fc164.chunk.js.map": "/aulas/static/js/2.3d8fc164.chunk.js.map",
+    "static/js/3.9120e41b.chunk.js": "/aulas/static/js/3.9120e41b.chunk.js",
+    "static/js/3.9120e41b.chunk.js.map": "/aulas/static/js/3.9120e41b.chunk.js.map",
     "index.html": "/aulas/index.html",
     "static/css/main.952fc2e3.chunk.css.map": "/aulas/static/css/main.952fc2e3.chunk.css.map",
-    "static/js/2.d44b4efa.chunk.js.LICENSE.txt": "/aulas/static/js/2.d44b4efa.chunk.js.LICENSE.txt",
+    "static/js/2.3d8fc164.chunk.js.LICENSE.txt": "/aulas/static/js/2.3d8fc164.chunk.js.LICENSE.txt",
     "static/media/analiseEmArvore1.05410751.png": "/aulas/static/media/analiseEmArvore1.05410751.png",
     "static/media/analiseEmArvore2.89f6a8f4.png": "/aulas/static/media/analiseEmArvore2.89f6a8f4.png",
     "static/media/analiseEmArvore3.4a140da8.png": "/aulas/static/media/analiseEmArvore3.4a140da8.png",
-    "static/media/provaMetodoMestre.58fbc3b6.png": "/aulas/static/media/provaMetodoMestre.58fbc3b6.png"
+    "static/media/avl.4aa173c9.PNG": "/aulas/static/media/avl.4aa173c9.PNG",
+    "static/media/avlDuplaDireita.86feefb0.PNG": "/aulas/static/media/avlDuplaDireita.86feefb0.PNG",
+    "static/media/avlDuplaEsquerda.5d46d9e4.PNG": "/aulas/static/media/avlDuplaEsquerda.5d46d9e4.PNG",
+    "static/media/avlSimplesDireita.bac0c878.PNG": "/aulas/static/media/avlSimplesDireita.bac0c878.PNG",
+    "static/media/avlSimplesEsquerda.2ad201a8.PNG": "/aulas/static/media/avlSimplesEsquerda.2ad201a8.PNG",
+    "static/media/provaMetodoMestre.58fbc3b6.png": "/aulas/static/media/provaMetodoMestre.58fbc3b6.png",
+    "static/media/rnDefinicoes.7265dbb6.PNG": "/aulas/static/media/rnDefinicoes.7265dbb6.PNG",
+    "static/media/rnDefinicoesCenario2.fc3c014a.png": "/aulas/static/media/rnDefinicoesCenario2.fc3c014a.png",
+    "static/media/rnDefinicoesTriangulo.e7aea361.PNG": "/aulas/static/media/rnDefinicoesTriangulo.e7aea361.PNG",
+    "static/media/rnDuplaDireita.1f50fee6.PNG": "/aulas/static/media/rnDuplaDireita.1f50fee6.PNG",
+    "static/media/rnDuplaEsquerda.a8e56735.PNG": "/aulas/static/media/rnDuplaEsquerda.a8e56735.PNG",
+    "static/media/rnSimplesDireita.ce181779.PNG": "/aulas/static/media/rnSimplesDireita.ce181779.PNG",
+    "static/media/rnSimplesEsquerda.dd4e0a4d.PNG": "/aulas/static/media/rnSimplesEsquerda.dd4e0a4d.PNG"
   },
   "entrypoints": [
-    "static/js/runtime-main.80eb2dd4.js",
-    "static/js/2.d44b4efa.chunk.js",
+    "static/js/runtime-main.1f23d49f.js",
+    "static/js/2.3d8fc164.chunk.js",
     "static/css/main.952fc2e3.chunk.css",
-    "static/js/main.7d85e3d9.chunk.js"
+    "static/js/main.b507290f.chunk.js"
   ]
 }

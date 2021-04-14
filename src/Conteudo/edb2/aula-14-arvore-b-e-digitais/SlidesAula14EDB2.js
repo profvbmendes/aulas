@@ -23,7 +23,7 @@ export function SlidesAula14EDB2(props) {
   const classes = useStyles(props);
 
   useEffect(() => {
-    document.title = "EDB2 - Aula 13 - Árvores B (B-Tree) e digitais (Tries)"
+    document.title = "EDB2 - Aula 14 - Árvores B (B-Tree) e digitais (Tries)"
   }, []);
 
   return (

@@ -9,14 +9,14 @@ import ImdSlide from '../../../ImdCommons/ImdSlide';
 import { BuscaBinaria } from '../aula-07/BuscaBinaria';
 import { ArvoreBinariaDefinicao, ArvoresBuscaBinaria } from '../aula-07/Arvores';
 import Math from '../../../ImdCommons/Math';
-import { arvoreBinaria, arvoreBinariaCompleta, arvoreEstritamenteBinaria } from '../../../data/arvoreBinaria';
-import ImdCodePane from '../../../ImdCommons/ImdCodePane';
-import { buscaOrdemSimetrica, buscaPreOrdem, buscaPosOrdem } from '../../../codes/percursos_arvore_binaria';
+import { arvoreBinaria, arvoreBinariaBusca, arvoreBinariaBuscaDesbalanceada, arvoreBinariaBuscaZigueZague, arvoreBinariaBuscaComFolha } from '../../../data/arvoreBinaria';
+import { ImdVector } from '../../../ImdCommons/ImdVector';
 
 const useStyles = makeStyles((theme, props) => (themeBaseStyles(theme, props)));
 
 export function SlidesAula09EDB2(props) {
   const classes = useStyles(props);
+  const orderedVector = [{value: 8}, {value: 12}, {value: 15}, {value: 18}, {value: 28}, {value: 45}, {value: 62}];
 
   useEffect(() => {
     document.title = "EDB2 - Aula 09 - Árvores Binárias de Busca"
@@ -72,7 +72,161 @@ export function SlidesAula09EDB2(props) {
           <Typography className={classes.topicoS2}>Remoção</Typography>
         </Box>
       </ImdSlide>
+      <ImdSlide heading="Árvore Binária de Busca: Busca">
+        <Box display="flex"
+            className={classes.root}
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="space-evenly">
+          <Typography className={classes.topicoS2}>Dada uma <span className={classes.emphasis}>coleção</span> de elementos previamente <span className={classes.emphasis}>ordenada</span></Typography>
+          <Typography className={classes.topicoS2}><span className={classes.emphasis}>Encontrar</span> o elemento que contenha uma dada <span className={classes.emphasis}>chave</span></Typography>
+          <Typography className={classes.topicoS3}><span className={classes.danger}>Qual algoritmo devemos utilizar?</span></Typography>
+        </Box>
+      </ImdSlide>
+      <ImdSlide heading="Árvore Binária de Busca: Busca">
+        <Box display="flex"
+            className={classes.root}
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="space-evenly">
+          <ImdVector
+            data={orderedVector}
+            height={100}  />
+          
+          <Typography className={classes.topicoS3}><span className={classes.emphasis}>Busca Binária</span></Typography>
+          <Typography className={classes.topicoS2}><span className={classes.danger}>Qual a complexidade?</span></Typography>
+          <Typography className={classes.topicoS2}><span className={classes.danger}>Como transformamos esta coleção de elementos em uma árvore?</span></Typography>
+        </Box>
+      </ImdSlide>
+      
+      <ImdSlide heading="Árvore Binária de Busca: Busca">
+        <Box display="flex"
+            className={classes.root}
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="space-evenly">
+          <ImdVector
+            data={orderedVector}
+            height={100}  />
+          <ArvoresBuscaBinaria arvore={arvoreBinariaBusca}/>
+          <Typography className={classes.topicoS2}><span className={classes.danger}>Qual a complexidade?</span></Typography>
+        </Box>
+      </ImdSlide>
+      
+      <ImdSlide heading="Árvore Binária de Busca: Busca">
+        <Box display="flex"
+            className={classes.root}
+            flexDirection="row"
+            alignItems="center"
+            justifyContent="space-evenly">
+          <ArvoresBuscaBinaria arvore={arvoreBinariaBuscaDesbalanceada} zoom={0.65}/>
+          <Typography className={classes.topicoS2}><span className={classes.danger}>Também é uma árvore binária de busca?</span></Typography>
+        </Box>
+      </ImdSlide>
+      
+      <ImdSlide heading="Árvore Binária de Busca: Busca">
+        <Box display="flex"
+            className={classes.root}
+            flexDirection="row"
+            alignItems="center"
+            justifyContent="space-evenly">
+          <ArvoresBuscaBinaria arvore={arvoreBinariaBuscaZigueZague} zoom={0.65}/>
+          <Typography className={classes.topicoS2}><span className={classes.danger}>Qual a complexidade?</span></Typography>
+        </Box>
+      </ImdSlide>
+      
+      <ImdSlide heading="Árvore Binária de Busca: Busca">
+        <Box display="flex"
+            className={classes.root}
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="space-evenly">
+          <ArvoresBuscaBinaria arvore={arvoreBinariaBusca}/>
+          <Typography className={classes.topicoS2}>Se a árvore binária de busca for <span className={classes.emphasis}>completa</span>, a complexidade da busca é <span className={classes.emphasis}><Math tex={String.raw`O(\log{n})`}/></span></Typography>
+        </Box>
+      </ImdSlide>
+      
+      <ImdSlide heading="Árvore Binária de Busca: Inserção">
+        <Box display="flex"
+            className={classes.root}
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="space-evenly">
+          <ArvoresBuscaBinaria arvore={arvoreBinariaBusca}/>
+          <Typography className={classes.topicoS2}><span className={classes.danger}>Qual o caminho para inserir o elemento 21 e manter as condições da árvore binária de busca?</span></Typography>
+          <Typography className={classes.topicoS2}><span className={classes.danger}>Qual a complexidade?</span></Typography>
+        </Box>
+      </ImdSlide>
+      
+      <ImdSlide heading="Árvore Binária de Busca: Inserção">
+        <Box display="flex"
+            className={classes.root}
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="space-evenly">
+          <ArvoresBuscaBinaria arvore={arvoreBinariaBuscaComFolha} zoom={0.75}/>
+        </Box>
+      </ImdSlide>
+      
+      <ImdSlide heading="Exercício">
+        <Box display="flex"
+            className={classes.root}
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="space-evenly">
+          <Typography className={classes.topicoS2}>Alterar o método de inserção na nossa árvore para que ela sempre seja uma árvore binária de busca.</Typography>
+          <Typography className={classes.topicoS2}>O que acontece se inserirmos o vetor [{orderedVector.map(el => el.value).join(",")}] iterando sobre ele?</Typography>
+        </Box>
+      </ImdSlide>
+      
+      <ImdSlide heading="Árvore Binária de Busca: Remoção">
+        <Box display="flex"
+            className={classes.root}
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="space-evenly">
+          <ArvoresBuscaBinaria arvore={arvoreBinariaBuscaComFolha} zoom={0.75}/>
+          <Typography className={classes.topicoS2}><span className={classes.danger}>Qual o algoritmo para remover o elemento 8?</span></Typography>
+          <Typography className={classes.topicoS2}><span className={classes.danger}>Qual a complexidade?</span></Typography>
+        </Box>
+      </ImdSlide>
+      
+      <ImdSlide heading="Árvore Binária de Busca: Remoção">
+        <Box display="flex"
+            className={classes.root}
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="space-evenly">
+          <ArvoresBuscaBinaria arvore={arvoreBinariaBuscaComFolha} zoom={0.75}/>
+          <Typography className={classes.topicoS2}><span className={classes.danger}>Qual o algoritmo para remover o elemento 28?</span></Typography>
+          <Typography className={classes.topicoS2}><span className={classes.danger}>Qual a complexidade?</span></Typography>
+        </Box>
+      </ImdSlide>
+      
+      <ImdSlide heading="Árvore Binária de Busca: Remoção">
+        <Box display="flex"
+            className={classes.root}
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="space-evenly">
+          <ArvoresBuscaBinaria arvore={arvoreBinariaBuscaComFolha} zoom={0.75}/>
+          <Typography className={classes.topicoS2}><span className={classes.danger}>Qual o algoritmo para remover o elemento 18?</span></Typography>
+          <Typography className={classes.topicoS2}><span className={classes.danger}>Qual a complexidade?</span></Typography>
+        </Box>
+      </ImdSlide>
+
+      <ImdSlide heading="Exercício">
+        <Box display="flex"
+            className={classes.root}
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="space-evenly">
+          <Typography className={classes.topicoS2}>Alterar o método de remoção da nossa árvore para que ela sempre seja uma árvore binária de busca.</Typography>
+        </Box>
+      </ImdSlide>
+
       <ImdSlideDuvidas/>
+      
       <ImdSlide heading="Referências">
         <Box className={classes.slideContentColumnBox}>
           <List component="ul" className={classes.numbersOl}>

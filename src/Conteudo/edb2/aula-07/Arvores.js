@@ -19,6 +19,11 @@ const useStyles = makeStyles((theme, props) => ({
     fill: theme.palette.secondary.light,
     stroke: 'none'
   },
+  nodeEmpty: {
+    fill: "transparent",
+    color: theme.palette.highlight.main,
+    stroke: "none"
+  },
   node: {
     fill: theme.palette.secondary.main,
     stroke: 'none'
@@ -244,6 +249,10 @@ export function ArvoresBuscaBinaria(props) {
   if (props.withCode) {
     zoom = 0.75;
   }
+  
+  if (props.zoom) {
+    zoom = props.zoom;
+  }
 
   return (
       <Box className={classes.treeRoot}>
@@ -257,11 +266,29 @@ export function ArvoresBuscaBinaria(props) {
               const fade = param.nodeDatum.attributes && param.nodeDatum.attributes.fade;
               const highlight = param.nodeDatum.attributes && param.nodeDatum.attributes.highlight;
               const balloon = param.nodeDatum.attributes && param.nodeDatum.attributes.balloon;
+              const empty = param.nodeDatum.attributes && param.nodeDatum.attributes.empty;
+              const color = param.nodeDatum.attributes && param.nodeDatum.attributes.color;
+              let classname = classes.node;
+              if (highlight) {
+                classname = classes.nodeHighlight;
+              } else if (fade) {
+                classname = classes.nodeFade;
+              } else if (empty) { 
+                classname = classes.nodeEmpty;
+              }
+              
+              const styleText = empty && color ? {
+                fill: color
+              } : {};
+              const styleCircle = !empty && color ? {
+                fill: color
+              } : {};
+
               return (
                 <>
                   <g>
-                    <circle x={size/2} y={size/2} className={highlight ? classes.nodeHighlight : fade ? classes.nodeFade : classes.node} r={size/2}/>
-                    <text dominantBaseline="middle" textAnchor="middle" className={classes.nodeText}>{param.nodeDatum.name}</text>
+                    <circle x={size/2} y={size/2} className={classname} r={size/2} style={styleCircle}/>
+                    <text dominantBaseline="middle" textAnchor="middle" className={classes.nodeText} style={styleText}>{param.nodeDatum.name}</text>
                     { balloon ? <foreignObject x={balloon.x} y={balloon.y} width={balloon.width} height={balloon.height}>{balloon.content()}</foreignObject> : ''}
                   </g>
                 </>
